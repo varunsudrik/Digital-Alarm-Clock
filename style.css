@@ -9,7 +9,7 @@ body {
     margin: 40px auto;
     position: relative;
     top: 140px;
-    height: 36vh;
+    height: 43vh;
     width: 47vh;
     border-radius: 10px;
     box-shadow: 0px 5px 25px rgba(14, 21, 37, 0.7);
@@ -57,11 +57,21 @@ body {
     display: flex;
     margin: 40px auto;
     position: relative;
-    height: 30vh;
+    height: 15vh;
     width: 47vh;
+    bottom: 15vh;
 }
 
 select{
     padding: 15px;
     margin: 15px;
 }
+.button{
+    position: relative;
+    right: 70%;
+    margin:  auto;
+    padding: 10px;
+    text-align: center;
+
+
+    }
