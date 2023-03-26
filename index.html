@@ -1,48 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Digital Clock</title>
+    <title>Alarm App</title>
+    <!-- Font Awesome Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&family=Roboto+Mono:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Stylesheet -->
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="box">
+    <div class="wrapper">
+      <div class="timer-display">00:00:00</div>
       <div class="container">
-        <div class="time">
-          <div class="hour">00</div>
-          <div class="colon">:</div>
-          <div class="minute">00</div>
-          <div class="zone">PM</div>
+        <div class="inputs">
+          <input
+            type="number"
+            id="hourInput"
+            placeholder="00"
+            min="0"
+            max="23"
+          />
+          <input
+            type="number"
+            id="minuteInput"
+            placeholder="00"
+            min="0"
+            max="59"
+          />
+          <input
+            type="number"
+            id="secondInput"
+            placeholder="00"
+            min="0"
+            max="59"
+          />
         </div>
-      </div>
-      <div class="content">
-        <div class="column">
-          <select>
-            <option value="Hour" selected hidden>Hour</option>
-          </select>
-        </div>
-        <span>
-          <div class="column">
-            <select>
-              <option value="Minutes" selected hidden>Minutes</option>
-            </select>
-          </div></span
-        >
-        <span
-          ><div class="column">
-            <select>
-              <option value="AM/PM" selected hidden>AM/PM</option>
-              <option value="AM">AM</option>
-              <option value="PM">PM</option>
-            </select>
-          </div>
-          <div class="button"><button type="submit">Set Alarm</button></div>
-        </span>
+        <button id="set">Add Alarm</button>
+        <div class="activeAlarms"></div>
       </div>
     </div>
-
+    <!-- Script -->
     <script src="script.js"></script>
   </body>
 </html>
