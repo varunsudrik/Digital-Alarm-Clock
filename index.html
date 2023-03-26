@@ -18,7 +18,25 @@
   </head>
   <body>
     <div class="wrapper">
-      <div class="timer-display">00:00:00</div>
+      <div class="container">
+        <div class="time">
+          <div class="left-side">
+            <span class="hour">00</span>
+          </div>
+          <div class="right-side">
+            <div class="right-top">
+              <span class="colon" >:</span>
+              <span class="minute" >00</span>
+            </div>
+          <div class="right-bottom">
+            <span class="zone">PM</span>
+            <span class="second">00</span>
+          </div>  
+          </div>
+          </div>
+      
+    </div>
+      <!-- <div class="timer-display">00:00:00</div> -->
       <div class="container">
         <div class="inputs">
           <input
@@ -46,7 +64,7 @@
         <button id="set">Add Alarm</button>
         <div class="activeAlarms"></div>
       </div>
-    </div>
+      
     <!-- Script -->
     <script src="script.js"></script>
   </body>

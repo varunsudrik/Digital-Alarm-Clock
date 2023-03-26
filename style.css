@@ -94,3 +94,75 @@ body {
   border: none;
   cursor: pointer;
 }
+
+
+
+
+
+
+.hour{
+  font-size: 8em;
+  font-weight: 600px;
+  color: antiquewhite;
+  background: -webkit-linear-gradient(90deg, blue, white);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text ;
+}
+
+.colon{
+  /* margin-top: 5px;
+  margin-left: 3px; */
+  font-size: 4em;
+  font-weight: 500px;
+  color: whitesmoke;
+
+}
+
+.minute{
+  font-size: 5em;
+  font-weight: 500;
+  color: antiquewhite;
+  background: -webkit-linear-gradient(90deg, orchid, white);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text ;
+
+
+}
+
+
+
+.time {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.second{
+  position: relative;
+  /* margin-top: 80px; */
+  color: antiquewhite;
+
+  font-size: 1.8em;
+
+  }
+
+  .zone{
+    position: relative;
+    /* margin-top: 80px; */
+    color: antiquewhite;
+    font-size: 1.8em;
+    font-weight: 500;
+    color: orange;
+
+
+  
+  }
+
+
+  .right-bottom{
+    position: relative;
+    left: 30px;
+    bottom: 27px;
+  }
+  
+  

@@ -1,6 +1,7 @@
 //Initial References
 let timerRef = document.querySelector(".timer-display");
 const hourInput = document.getElementById("hourInput");
+const hourInput_new = document.getElementById("hour");
 const minuteInput = document.getElementById("minuteInput");
 const secondInput = document.getElementById("secondInput");
 const activeAlarms = document.querySelector(".activeAlarms");
@@ -42,7 +43,7 @@ function displayTimer() {
   ];
 
   //Display time
-  timerRef.innerHTML = `${hours}:${minutes}:${seconds}`;
+  //timerRef.innerHTML = `${hours}:${minutes}:${seconds}`;
 
   //Alarm
   alarmsArray.forEach((alarm, index) => {
@@ -119,7 +120,6 @@ setAlarm.addEventListener("click", () => {
   alarmObj.alarmMinute = minuteInput.value;
   alarmObj.alarmSecond = secondInput.value;
   alarmObj.isActive = false;
-  console.log(alarmObj);
   alarmsArray.push(alarmObj);
   createAlarm(alarmObj);
   hourInput.value = appendZero(initialHour);
@@ -167,3 +167,29 @@ window.onload = () => {
   minuteInput.value = appendZero(initialMinute);
   secondInput.value = appendZero(initialSecond);
 };
+
+function clock() {
+  var ampm;
+  let hour = document.querySelector(".hour");
+  let minute = document.querySelector(".minute");
+  let period = document.querySelector(".zone");
+  let second = document.querySelector(".second");
+
+  let min = new Date().getMinutes();
+  let h = new Date().getHours();
+  let s = new Date().getSeconds();
+
+  period.textContent = ampm;
+  hour.textContent = h;
+  minute.textContent = min;
+  second.textContent = s;
+
+  if (second.textContent < 10) {
+    second.textContent = "0" + s;
+  }
+
+  if (minute.textContent < 10) {
+    minute.textContent = "0" + min;
+  }
+}
+setInterval(clock, 1000);
