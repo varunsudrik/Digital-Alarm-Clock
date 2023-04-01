@@ -1,12 +1,12 @@
 //Initial References
-// let timerRef = document.querySelector(".timer-display");
-// const hourInput = document.getElementById("hourInput");
-// const hourInput_new = document.getElementById("hour");
-// const minuteInput = document.getElementById("minuteInput");
-// const secondInput = document.getElementById("secondInput");
-// const activeAlarms = document.querySelector(".activeAlarms");
-// const setAlarm = document.getElementById("set");
-// let alarmsArray = [];
+let timerRef = document.querySelector(".timer-display");
+const hourInput = document.getElementById("hourInput");
+const hourInput_new = document.getElementById("hour");
+const minuteInput = document.getElementById("minuteInput");
+const secondInput = document.getElementById("secondInput");
+const activeAlarms = document.querySelector(".activeAlarms");
+const setAlarm = document.getElementById("set");
+let alarmsArray = [];
 let alarmSound = new Audio("./alarm.mp3");
 
 let initialHour = 0,
