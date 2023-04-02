@@ -42,9 +42,6 @@ function displayTimer() {
     appendZero(date.getSeconds()),
   ];
 
-  //Display time
-  //timerRef.innerHTML = `${hours}:${minutes}:${seconds}`;
-
   //Alarm
   alarmsArray.forEach((alarm, index) => {
     if (alarm.isActive) {
@@ -167,7 +164,7 @@ window.onload = () => {
   minuteInput.value = appendZero(initialMinute);
   secondInput.value = appendZero(initialSecond);
 };
-
+// display time
 function clock() {
   var ampm;
   let hour = document.querySelector(".hour");
